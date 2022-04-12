@@ -1,0 +1,23 @@
+<template>
+    <div class="container">
+        <div v-if="list[0].length!=0" id="before-lockdown" ref="chart1"></div>
+        <div v-if="list[0].length!=0" id="lockdown" ref="chart2"></div>
+        <div v-if="list[0].length!=0" id="latest" ref="chart3"></div>
+        <div v-if="list.length==0">
+            <img src="../assets/empty.svg" alt="" width="400px">
+            <p style="font-size:20px;color:#666">no reuslt</p>
+        </div>
+        <el-tooltip class="tooltip" effect="dark" content="Share to Twitter" placement="left-start" style="bottom:140px">
+            <el-button class="btn"><img src="../assets/Twitter.png" alt="" width="30px"></el-button>
+        </el-tooltip>
+        <el-tooltip class="tooltip" effect="dark" content="Share to instagram" placement="left-start" style="bottom:200px">
+            <el-button class="btn"><img src="../assets/instagram.png" alt="" width="25px"></el-button>
+        </el-tooltip>
+        <el-tooltip class="tooltip" effect="dark" content="Share to linkedin" placement="left-start" style="bottom:260px">
+            <el-button class="btn"><img src="../assets/linkedin.png" alt="" width="30px"></el-button>
+        </el-tooltip>
+        <el-tooltip class="tooltip" effect="dark" content="Share to facebook" placement="left-start" style="bottom:80px">
+            <el-button class="btn"><img src="../assets/facebook.png" alt="" width="30px"></el-button>
+        </el-tooltip>
+    </div>
+</template>
